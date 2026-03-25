@@ -1,0 +1,10 @@
+# Dependencies
+node_modules/
+*.log
+
+# Python scripts (cleanup tools)
+*.py
+
+# OS files
+.DS_Store
+Thumbs.db

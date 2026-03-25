@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore Guardem Security's comprehensive services, ranging from Uniform Security and Mobile Patrol to Executive Protection." />
+  <title>Security Services | Guardem Security</title>
+  <link rel="icon" href="logo.jpg" type="image/jpeg" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Specific styles for Services page to complement style.css */
+    .services-page-hero {
+      background: var(--navy);
+      padding: 140px 24px 80px;
+      text-align: center;
+      color: var(--white);
+    }
+    .services-page-hero h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3rem; font-weight: 800; margin-bottom: 16px;
+    }
+    .services-page-hero p {
+      font-size: 1.1rem; max-width: 600px; margin: 0 auto; opacity: 0.8;
+    }
+    .all-services-list {
+      padding: 80px 0; background: #F5F7FA;
+    }
+    .service-row {
+      display: flex; align-items: center; gap: 40px;
+      background: var(--pure-wh); border-radius: 12px; overflow: hidden;
+      margin-bottom: 40px; box-shadow: var(--shadow-sm);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .service-row:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+    .service-row:nth-child(even) { flex-direction: row-reverse; }
+    
+    .service-img-col {
+      flex: 1 1 40%; min-height: 300px; position: relative;
+    }
+    .service-img-col img {
+      width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0;
+    }
+    .service-text-col {
+      flex: 1 1 60%; padding: 48px;
+    }
+    .service-text-col h2 {
+      font-family: 'Montserrat', sans-serif; font-size: 2rem; color: var(--navy); margin-bottom: 16px;
+    }
+    .service-text-col p {
+      color: var(--grey); line-height: 1.7; margin-bottom: 24px; font-size: 1.05rem;
+    }
+    .service-features {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 32px;
+    }
+    .feature-item {
+      display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 0.9rem; color: var(--navy);
+    }
+    .feature-icon { width: 18px; height: 18px; color: var(--gold); }
+    
+    @media (max-width: 900px) {
+      .service-row, .service-row:nth-child(even) { flex-direction: column; }
+      .service-img-col { width: 100%; height: 250px; min-height: auto; position: static; }
+      .service-img-col img { position: static; height: 250px; }
+      .service-text-col { padding: 32px 24px; }
+      .service-features { grid-template-columns: 1fr; }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar" style="background: rgba(9, 15, 24, 0.95);">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/logo.jpg" alt="Guardem Logo" class="nav-logo" />
+        <span class="nav-brand-text">GUARDEM <span>SECURITY</span></span>
+      </a>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li class="dropdown">
+          <a href="services.html" class="nav-link active">Services <span class="dropdown-arrow">▼</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="uniform-security.html">Uniform Security</a></li>
+            <li><a href="office-security.html">Office Security</a></li>
+            <li><a href="event-security.html">Event Security</a></li>
+            <li><a href="loss-prevention.html">Loss Prevention</a></li>
+            <li><a href="elite-suit-tie.html">Elite Suit & Tie</a></li>
+            <li><a href="concierge-security.html">Concierge</a></li>
+            <li><a href="executive-protection.html">Executive Protection</a></li>
+            <li><a href="house-protection.html">House Protection</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="https://ca.indeed.com/cmp/Guardem-Security-Group-Inc." target="_blank" class="nav-link">Careers</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        <li><a href="index.html#quote" class="btn btn-primary-nav">Get a Quote</a></li>
+      </ul>
+
+        </li>
+        <li><a href="index.html#about" class="nav-link">About Us</a></li>
+        <li><a href="https://ca.indeed.com/cmp/Guardem-Security-Group-Inc." target="_blank" class="nav-link">Careers</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#quote" class="btn btn-primary-nav">Get a Quote</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="services-page-hero">
+    <div class="container">
+      <h1>Our Security Services</h1>
+      <p>Comprehensive, elite protection tailored to your specific industry and needs. Explore our 8 core service divisions below.</p>
+    </div>
+  </header>
+
+  <!-- SERVICES LIST -->
+  <main class="all-services-list">
+    <div class="container">
+      
+      <!-- 1. Uniform Security -->
+      <div class="service-row" id="uniform">
+        <div class="service-img-col">
+          <img src="assets/63371762-9bd7-43d2-9399-bca99d12a23e.png" alt="Uniform Security Guard" onerror="this.src='https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80'" />
+        </div>
+        <div class="service-text-col">
+          <h2>Uniform Security</h2>
+          <p>Visible, professional deterrence for your commercial or residential property. Our uniformed officers are trained to de-escalate situations, provide excellent customer service, and ensure site safety protocols are strictly followed.</p>
+          <div class="service-features">
+            <div class="feature-item"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Static Post Guards</div>
+            <div class="feature-item"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Foot Patrols</div>
+            <div class="feature-item"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Access Control</div>
+            <div class="feature-item"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Incident Reporting</div>
+          </div>
+          <a href="#quote" class="btn btn-gold">Request this service</a>
+        </div>
+      </div>
+
+      <!-- 2. Office Security Services -->
+      <div class="service-row" id="office">
+        <div class="service-img-col">
+          <img src="assets/office.png" alt="Office Security" onerror="this.src='https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80'" />
+        </div>
+        <div class="service-text-col">
+          <h2>Office Security Services</h2>
+          <p>Protect your corporate assets, employees, and sensitive information with our dedicated office security. We manage visitor logs, employee access badges, and ensure off-hours building integrity.</p>
+          <div class="service-features">
+            <div class="feature-item"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Front Desk Management</div>
+            <div class="feature-item"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Keycard Monitoring</div>
+            <div class="feature-item"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Escort Services</div>
+            <div class="feature-item"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Emergency Evacuation</div>
+          </div>
+          <a href="#quote" class="btn btn-gold">Request this service</a>
+        </div>
+      </div>
+
+      <!-- 3. Event Security Services -->
+      <div class="service-row" id="event">
+        <div class="service-img-col">
+          <img src="assets/event.png" alt="Event Security" style="filter: hue-rotate(15deg);" onerror="this.src='https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80'" />
+        </div>
+        <div class="service-text-col">
+          <h2>Event Security Services</h2>
+          <p>Comprehensive crowd management and protection for festivals, concerts, corporate gatherings, and private parties. We work closely with event organizers to ensure a safe, enjoyable experience for all attendees.</p>
+          <div class="service-features">
+            <div class="feature-item"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Crowd Control</div>
+            <div class="feature-item"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Bag Checks</div>
+            <div class="feature-item"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> VIP Escorting</div>
+            <div class="feature-item"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Ticket Verification</div>
+          </div>
+          <a href="#quote" class="btn btn-gold">Request this service</a>
+        </div>
+      </div>
+
+      <!-- 4. Loss Prevention Services -->
+      <div class="service-row" id="loss-prevention">
+        <div class="service-img-col">
+          <img src="assets/event 2.png" alt="Loss Prevention" style="filter: brightness(0.8);" onerror="this.src='https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=800&q=80'" />
+        </div>
+        <div class="service-text-col">
+          <h2>Loss Prevention Services</h2>
+          <p>Protect your retail inventory from theft and shrink. Our highly trained Loss Prevention Officers operate in both uniformed and plain-clothes capacities to deter, identify, and apprehend shoplifters.</p>
+          <div class="service-features">
+            <div class="feature-item"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Plain-Clothes LP</div>
+            <div class="feature-item"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> CCTV Monitoring</div>
+            <div class="feature-item"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Policy Enforcement</div>
+            <div class="feature-item"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Apprehension & Reporting</div>
+          </div>
+          <a href="#quote" class="btn btn-gold">Request this service</a>
+        </div>
+      </div>
+
+      <!-- 5. Elite Suit & Tie Security -->
+      <div class="service-row" id="suit-tie">
+        <div class="service-img-col">
+          <img src="assets/d53885ec-81b3-4895-9cc1-b907146979ec.png" alt="Suit and Tie Security" onerror="this.src='https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&q=80'" />
+        </div>
+        <div class="service-text-col">
+          <h2>Elite Suit & Tie Security</h2>
+          <p>For high-end retail boutiques, premium corporate environments, and luxury events where appearance matters as much as safety. Our officers blend seamlessly into premium environments while providing robust security.</p>
+          <div class="service-features">
+            <div class="feature-item"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Luxury Retail</div>
+            <div class="feature-item"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Gallery Openings</div>
+            <div class="feature-item"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Premium Hospitality</div>
+            <div class="feature-item"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Discreet Protection</div>
+          </div>
+          <a href="#quote" class="btn btn-gold">Request this service</a>
+        </div>
+      </div>
+
+      <!-- 6. Concierge Security Services -->
+      <div class="service-row" id="concierge">
+        <div class="service-img-col">
+          <img src="assets/concierge.png" alt="Concierge Security" style="filter: sepia(0.2);" onerror="this.src='https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80'" />
+        </div>
+        <div class="service-text-col">
+          <h2>Concierge Security Services</h2>
+          <p>The perfect blend of first-class hospitality and strict access control. Designed for luxury condominiums and Class-A office towers, our concierge guards are the welcoming face of your building.</p>
+          <div class="service-features">
+            <div class="feature-item"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Guest Reception</div>
+            <div class="feature-item"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Package Handling</div>
+            <div class="feature-item"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Amenity Booking</div>
+            <div class="feature-item"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Amenity Patrols</div>
+          </div>
+          <a href="#quote" class="btn btn-gold">Request this service</a>
+        </div>
+      </div>
+
+      <!-- 7. Executive Protection -->
+      <div class="service-row" id="executive">
+        <div class="service-img-col">
+          <img src="assets/d53885ec-81b3-4895-9cc1-b907146979ec.png" alt="Executive Protection" style="filter: contrast(1.1);" onerror="this.src='https://images.unsplash.com/photo-1560942858-a53ecaca27d7?w=800&q=80'" />
+        </div>
+        <div class="service-text-col">
+          <h2>Executive Protection</h2>
+          <p>Close protection services for corporate executives, VIPs, and high-net-worth individuals. Our EP agents are highly trained in threat assessment, route planning, and discreet physical protection.</p>
+          <div class="service-features">
+            <div class="feature-item"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Threat Mitigation</div>
+            <div class="feature-item"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Secure Transport</div>
+            <div class="feature-item"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Advance Route Prep</div>
+            <div class="feature-item"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Personal Escort</div>
+          </div>
+          <a href="#quote" class="btn btn-gold">Request this service</a>
+        </div>
+      </div>
+
+      <!-- 8. House Protection Services -->
+      <div class="service-row" id="house">
+        <div class="service-img-col">
+          <img src="assets/house.png" alt="House Protection" style="filter: hue-rotate(-20deg);" onerror="this.src='https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80'" />
+        </div>
+        <div class="service-text-col">
+          <h2>House Protection Services</h2>
+          <p>Protecting private estates and luxury homes. We provide dedicated residential guards and marked vehicle mobile patrols to deter trespassers and ensure complete peace of mind for your family.</p>
+          <div class="service-features">
+            <div class="feature-item"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Estate Guarding</div>
+            <div class="feature-item"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Perimeter Patrols</div>
+            <div class="feature-item"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Alarm Response</div>
+            <div class="feature-item"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Vacation Watches</div>
+          </div>
+          <a href="#quote" class="btn btn-gold">Request this service</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  
+  
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-logo-area">
+          <img src="assets/logo.jpg" alt="Guardem Logo">
+          <p>Founded on integrity and vigilance, Guardem Security provides world-class protection for people and properties across the region.</p>
+          <div class="social-icons">
+            <a href="mailto:info@guardem.com" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://wa.me/17782972000" class="social-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h4>OUR SERVICES</h4>
+          <ul>
+            <li><a href="uniform-security.html">Uniform Security</a></li>
+            <li><a href="office-security.html">Office Security</a></li>
+            <li><a href="event-security.html">Event Security</a></li>
+            <li><a href="loss-prevention.html">Loss Prevention</a></li>
+            <li><a href="elite-suit-tie.html">Elite Suit & Tie</a></li>
+            <li><a href="concierge-security.html">Concierge Security</a></li>
+            <li><a href="executive-protection.html">Executive Protection</a></li>
+            <li><a href="house-protection.html">House Protection</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>EXPLORE</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="https://ca.indeed.com/cmp/Guardem-Security-Group-Inc.">Careers</a></li>
+            <li><a href="services.html">All Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact-info">
+          <h4>CONTACT</h4>
+          <p><i class="fas fa-map-marker-alt"></i> 203-12885 80th Avenue,<br>Surrey, BC, V3W 0E6</p>
+          <p><i class="fas fa-phone"></i> (+1) 778-297-2000</p>
+          <p><i class="fas fa-envelope"></i> info@guardem.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 GUARDEM SECURITY GROUP INC. ALL RIGHTS RESERVED.</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+</body>
+</html>
