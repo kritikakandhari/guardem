@@ -1751,17 +1751,17 @@ ul { list-style: none; }
 }
 
 .industry-card-premium {
-  background: rgba(255, 255, 255, 0.05); /* Solid background, no blur */
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 40px 20px;
-  border-radius: 20px;
-  text-align: center;
+  background: transparent !important; /* No box background for clean framing */
+  border: none !important;
+  padding: 0;
+  border-radius: 0;
+  text-align: left;
 }
 
 /* Hover Scaling Removed */
 .industry-card-premium:hover {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: var(--gold);
+  background: transparent !important;
+  border-color: transparent !important;
 }
 
 .industry-card-premium svg {
@@ -1780,11 +1780,11 @@ ul { list-style: none; }
 .process-steps-zigzag {
   display: flex;
   flex-direction: column;
-  gap: 180px; /* Increased for breathing room */
+  gap: 300px; /* Spacious framing gap */
   position: relative;
   z-index: 2;
-  margin-top: 120px;
-  max-width: 1100px;
+  margin-top: 150px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1793,8 +1793,9 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 60px;
+  gap: 100px;
   text-align: left;
+  min-height: 400px; /* Content centered within frame */
 }
 
 .zigzag-step:nth-child(even) {
@@ -1836,16 +1837,39 @@ ul { list-style: none; }
   box-shadow: 0 0 30px rgba(201, 168, 76, 0.4);
 }
 
-.step-info h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-  font-size: 1.8rem;
-  color: var(--navy);
-  margin-bottom: 15px;
+.step-info {
+  position: relative;
+  flex: 1;
 }
 
-.dark-theme .step-info h3 {
+.step-info h3, .step-info h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 2.2rem; /* Bold, Large like reference */
   color: var(--gold);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.step-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.step-number-badge {
+  width: 45px;
+  height: 45px;
+  background: var(--gold);
+  color: var(--navy);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 800;
+  flex-shrink: 0;
 }
 
 .step-info p {
