@@ -354,19 +354,20 @@
   </section>
 
   <!-- ===== INDUSTRIES WE SERVE (Zero Baseline Precision) ===== -->
-  <section class="dark-theme tracing-container" style="padding-top: 0;">
-    <!-- SVG Zero-Baseline Offset -->
-    <div class="tracing-svg-wrapper" style="height: 100%; top: 0;">
-      <svg viewBox="0 0 1000 2000" preserveAspectRatio="none" style="width: 100%; height: 100%;">
-        <!-- Background path (faint) -->
-        <path class="tracing-path-bg" d="M50,0 L950,0 L950,400 L50,400 L50,800 L950,800 L950,1200 L50,1200 L50,1600 L950,1600 L950,2000 L50,2000" />
-        <!-- Active path (drawn on scroll) -->
-        <path class="tracing-path-active" d="M50,0 L950,0 L950,400 L50,400 L50,800 L950,800 L950,1200 L50,1200 L50,1600 L950,1600 L950,2000 L50,2000" />
-      </svg>
-    </div>
+  <section class="industries-section dark-theme tracing-container" style="padding-top: 0; padding-bottom: 100px;">
+    <div class="container" style="position: relative;">
+      
+      <!-- SVG Zero-Baseline Offset with Locked Height -->
+      <div class="tracing-svg-wrapper" style="position: absolute; top: 0; left: 0; width: 100%; height: 2000px; z-index: 1;">
+        <svg viewBox="0 0 1000 2000" preserveAspectRatio="none" style="width: 100%; height: 100%;">
+          <!-- Background path (faint) -->
+          <path class="tracing-path-bg" d="M50,0 L950,0 L950,400 L50,400 L50,800 L950,800 L950,1200 L50,1200 L50,1600 L950,1600 L950,2000 L50,2000" />
+          <!-- Active path (drawn on scroll) -->
+          <path class="tracing-path-active" d="M50,0 L950,0 L950,400 L50,400 L50,800 L950,800 L950,1200 L50,1200 L50,1600 L950,1600 L950,2000 L50,2000" />
+        </svg>
+      </div>
 
-    <div class="container">
-      <div class="process-steps-zigzag">
+      <div class="process-steps-zigzag" style="position: relative; z-index: 2;">
         <!-- Construction -->
         <div class="zigzag-step industry-card-premium reveal-on-scroll">
            <div class="zigzag-visual-premium">
