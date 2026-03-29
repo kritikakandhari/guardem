@@ -1802,8 +1802,8 @@ ul { list-style: none; }
 .zigzag-step {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 80px;
+  justify-content: center; /* Move content to the 'middle' between the vertical lines */
+  gap: 120px; /* Generous gap for premium feel */
   text-align: left;
   height: 400px; /* Precise segment height */
   position: relative;
