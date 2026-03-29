@@ -162,3 +162,60 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(typeWriter, 1000);
   }
 });
+
+// --- SCROLL PATH TRACING LOGIC ---
+function initScrollTracing() {
+  const containers = document.querySelectorAll('.tracing-container');
+  
+  if (containers.length === 0) return;
+
+  const handleScroll = () => {
+    containers.forEach(container => {
+      const svgPath = container.querySelector('.tracing-path-active');
+      if (!svgPath) return;
+
+      const pathLength = svgPath.getTotalLength();
+      
+      // Get container position
+      const rect = container.getBoundingClientRect();
+      const viewHeight = window.innerHeight;
+      
+      // Calculate scroll percentage within the container
+      // Starts when top of container is at 80% scroll
+      // Ends when bottom of container is at 20% scroll
+      let startOffset = viewHeight * 0.8;
+      let endOffset = viewHeight * 0.2;
+      
+      let progress = (startOffset - rect.top) / (container.offsetHeight + (startOffset - endOffset));
+      
+      // Clamp progress between 0 and 1
+      progress = Math.max(0, Math.min(1, progress));
+      
+      // Apply to SVG
+      svgPath.style.strokeDasharray = pathLength;
+      svgPath.style.strokeDashoffset = pathLength * (1 - progress);
+
+      // Handle step activation
+      const steps = container.querySelectorAll('.process-step-premium, .industry-card-premium');
+      const stepCount = steps.length;
+      
+      steps.forEach((step, index) => {
+        const threshold = (index) / stepCount;
+        if (progress >= threshold) {
+          step.classList.add('active');
+        } else {
+          step.classList.remove('active');
+        }
+      });
+    });
+  };
+
+  window.addEventListener('scroll', handleScroll);
+  // Initial check
+  handleScroll();
+}
+
+// Initialize on load
+document.addEventListener('DOMContentLoaded', () => {
+  initScrollTracing();
+});
