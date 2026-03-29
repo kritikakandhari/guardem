@@ -1780,11 +1780,11 @@ ul { list-style: none; }
 .process-steps-zigzag {
   display: flex;
   flex-direction: column;
-  gap: 300px; /* Spacious framing gap */
+  gap: 150px; /* Reduced for a more normal, compact look */
   position: relative;
   z-index: 2;
-  margin-top: 150px;
-  max-width: 1200px;
+  margin-top: 100px;
+  max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1793,9 +1793,9 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 100px;
+  gap: 80px;
   text-align: left;
-  min-height: 400px; /* Content centered within frame */
+  min-height: 250px; /* Compact centering */
 }
 
 .zigzag-step:nth-child(even) {
