@@ -1784,36 +1784,56 @@ ul { list-style: none; }
   letter-spacing: 1px;
 }
 
-/* Refined Process Steps for Tracing */
-.process-steps-tracing {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 60px;
+/* Zigzag Process Layout */
+.process-steps-zigzag {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
   position: relative;
   z-index: 2;
-  margin-top: 80px;
+  margin-top: 100px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.process-step-premium {
-  position: relative;
-  z-index: 2;
-}
-
-.step-icon-box {
-  width: 90px;
-  height: 90px;
-  background: var(--navy);
-  border: 3px solid rgba(201, 168, 76, 0.3);
-  border-radius: 24px;
+.zigzag-step {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 0 auto 30px;
-  color: var(--gold);
-  font-size: 2rem;
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  justify-content: space-between;
+  gap: 60px;
+  text-align: left;
+}
+
+.zigzag-step:nth-child(even) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.zigzag-step .step-icon-box {
+  flex-shrink: 0;
+  margin: 0; /* Reset previous margin */
+}
+
+.zigzag-step .step-info {
+  flex: 1;
+  max-width: 450px;
+}
+
+@media (max-width: 768px) {
+  .process-steps-zigzag {
+    gap: 80px;
+  }
+  
+  .zigzag-step, .zigzag-step:nth-child(even) {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .zigzag-step .step-info {
+    max-width: 100%;
+  }
 }
 
 .process-step-premium.active .step-icon-box {
@@ -1827,7 +1847,7 @@ ul { list-style: none; }
 .step-info h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: var(--navy);
   margin-bottom: 15px;
 }
@@ -1839,29 +1859,9 @@ ul { list-style: none; }
 .step-info p {
   color: #666;
   line-height: 1.7;
+  font-size: 1.1rem;
 }
 
 .dark-theme .step-info p {
   color: rgba(255,255,255,0.7);
-}
-
-@media (max-width: 1024px) {
-  .process-steps-tracing {
-    gap: 30px;
-  }
-}
-
-@media (max-width: 768px) {
-  .process-steps-tracing {
-    grid-template-columns: 1fr;
-    gap: 80px;
-  }
-  
-  .tracing-svg-wrapper {
-    display: none; /* Hide complex path on mobile for performance */
-  }
-  
-  .step-icon-box {
-    margin-bottom: 20px;
-  }
 }
