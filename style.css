@@ -1789,6 +1789,16 @@ ul { list-style: none; }
   margin-right: auto;
 }
 
+.tracing-svg-wrapper {
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1200px; /* Lock to process steps width */
+  z-index: 1;
+}
+
 .zigzag-step {
   display: flex;
   align-items: center;
