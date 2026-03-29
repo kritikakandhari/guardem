@@ -1783,7 +1783,7 @@ ul { list-style: none; }
   gap: 0; /* Mathematical precision: zero gap, fixed heights */
   position: relative;
   z-index: 2;
-  margin-top: 150px;
+  margin-top: 0; /* Zero baseline sync */
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
