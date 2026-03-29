@@ -251,7 +251,7 @@ function openApplyModal() {
       <div class="apply-modal">
         <button class="modal-close" onclick="closeApplyModal()">&times;</button>
         <div style="text-align:center; margin-bottom:24px;">
-          <img src="logo.jpg" alt="Logo" style="height:40px; margin-bottom:12px; filter:brightness(0) invert(1); background:#0D1B2A; padding:4px; border-radius:4px;"/>
+          <img src="assets/logo.jpg" alt="Logo" style="height:40px; margin-bottom:12px; filter:brightness(0) invert(1); background:#0D1B2A; padding:4px; border-radius:4px;"/>
           <h2 style="color:var(--in-blue); font-size:24px; margin-bottom:8px;">Ready to take the next step?</h2>
           <p style="color:var(--in-gray-text);">Apply for <strong id="modalJobTitle"></strong></p>
         </div>

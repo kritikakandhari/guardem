@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Guardem Security - Professional Security Services protecting what matters most across the Lower Mainland." />
   <title>Guardem Security | First-Class Protection</title>
-  <link rel="icon" href="logo.jpg" type="image/jpeg" />
+  <link rel="icon" href="assets/logo.jpg" type="image/jpeg" />
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,7 +18,7 @@
 <body>
 
   <!-- ===== NAVBAR ===== -->
-  <nav class="navbar" id="navbar" style="">
+  <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="index.html" class="nav-brand">
         <img src="assets/logo.jpg" alt="Guardem Logo" class="nav-logo" />
@@ -30,23 +30,24 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html" class="nav-link active">Home</a></li>
         <li class="dropdown">
-          <a href="services.html" class="nav-link ">Services <span class="dropdown-arrow">▼</span></a>
+          <a href="index.html#services" class="nav-link ">Services <span class="dropdown-arrow">▼</span></a>
           <ul class="dropdown-menu">
             <li><a href="uniform-security.html">Uniform Security</a></li>
             <li><a href="office-security.html">Office Security</a></li>
             <li><a href="event-security.html">Event Security</a></li>
-            <li><a href="loss-prevention.html">Loss Prevention</a></li>
-            <li><a href="elite-suit-tie.html">Elite Suit & Tie</a></li>
-            <li><a href="concierge-security.html">Concierge</a></li>
-            <li><a href="executive-protection.html">Executive Protection</a></li>
-            <li><a href="house-protection.html">House Protection</a></li>
+            <li><a href="loss-prevention.html">Loss Prevention Security</a></li>
+            <li><a href="elite-suit-tie.html">Elite Suit & Tie Security</a></li>
+            <li><a href="concierge-security.html">Concierge Security</a></li>
+            <li><a href="executive-protection.html">Executive Protection Security</a></li>
+            <li><a href="house-protection.html">House Protection Security</a></li>
           </ul>
         </li>
         <li><a href="about.html" class="nav-link ">About Us</a></li>
         <li><a href="blog.html" class="nav-link ">Blog</a></li>
-        <li><a href="https://ca.indeed.com/cmp/Guardem-Security-Group-Inc" target="_blank" class="nav-link">Careers</a></li>
-        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
-        <li><a href="index.html#quote" class="btn btn-primary-nav">Get a Quote</a></li>
+        <li><a href="faq.html" class="nav-link ">FAQ</a></li>
+        <li><a href="https://www.indeed.com/cmp/Guardem-Security-Ltd." target="_blank" class="nav-link">Careers</a></li>
+        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        <li><a href="contact.html" class="btn btn-primary-nav">Get a Quote</a></li>
       </ul>
     </div>
   </nav>
@@ -64,8 +65,8 @@
         <p class="hero-desc">Licensed, trained, and reliable security professionals.<br/>Serving the Lower Mainland.</p>
         
         <div class="hero-buttons">
-          <a href="#quote" class="btn btn-gold">Request a Quote</a>
-          <a href="https://ca.indeed.com/cmp/Guardem-Security-Group-Inc" target="_blank" class="btn btn-outline-white">Join Our Team</a>
+          <a href="contact.html" class="btn btn-gold">Request a Quote</a>
+          <a href="https://www.indeed.com/cmp/Guardem-Security-Ltd." target="_blank" class="btn btn-outline-white">Join Our Team</a>
         </div>
         
         <div class="hero-trust-badges">
@@ -85,121 +86,194 @@
       </div>
     </div>
   </header>
+  <!-- ===== SERVICES SCROLL TRACK (FOR PINNED EFFECT) ===== -->
+  <div class="services-scroll-wrapper">
+    <section class="sticky-services-section" id="services">
+      <div class="container services-inner-container">
+        <h2 class="section-title text-center text-white mb-4" style="font-size: 1.8rem; letter-spacing: 2px;">OUR <span style="color: var(--gold);">SERVICES</span> AT A GLANCE</h2>
+        
+        <div class="sticky-services-grid">
+          <!-- Left: Accordion List -->
+          <div class="services-accordion-list">
+            
+            <!-- Item 1: Uniform Security -->
+            <div class="accordion-item active" data-service="1">
+              <div class="accordion-header">
+                <div class="accordion-icon-box">
+                  <img src="assets/uniform shield.png" alt="Uniform Security Logo">
+                </div>
+                <h3 class="accordion-title">Uniform Security</h3>
+              </div>
+              <div class="accordion-body">
+                <p>Visible, professional deterrence for commercial and residential properties. Our guards are trained for rapid response and high-visibility protection.</p>
+                <a href="uniform-security.html" class="accordion-link">Learn More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
 
-  <!-- ===== OUR SECURITY SERVICES ===== -->
-  <section class="services-section" id="services">
-    <div class="container">
-      <h2 class="section-title text-center text-navy">Our Security Services</h2>
-      
-      <div class="services-grid">
-        <!-- Service 1 -->
-        <div class="service-card shadow-sm border-radius">
-          <div class="service-icon-box">
-             <img src="assets/uniform shield.png" alt="Uniform Security Shield" />
+            <!-- Item 2: Office Security -->
+            <div class="accordion-item" data-service="2">
+              <div class="accordion-header">
+                <div class="accordion-icon-box">
+                  <img src="assets/office shield.png" alt="Office Security Logo">
+                </div>
+                <h3 class="accordion-title">Office Security Services</h3>
+              </div>
+              <div class="accordion-body">
+                <p>Protect your corporate assets, manage visitors, and ensure safety. We blend professional security with high-end corporate hospitality.</p>
+                <a href="office-security.html" class="accordion-link">Learn More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <!-- Item 3: Event Security -->
+            <div class="accordion-item" data-service="3">
+              <div class="accordion-header">
+                <div class="accordion-icon-box">
+                  <img src="assets/event shield.png" alt="Event Security Logo">
+                </div>
+                <h3 class="accordion-title">Event Security Services</h3>
+              </div>
+              <div class="accordion-body">
+                <p>Comprehensive crowd management and protection for large gatherings. From private gala events to massive public festivals.</p>
+                <a href="event-security.html" class="accordion-link">Learn More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <!-- Item 4: Loss Prevention -->
+            <div class="accordion-item" data-service="4">
+              <div class="accordion-header">
+                <div class="accordion-icon-box">
+                  <img src="assets/loss prevention shield.png" alt="Loss Prevention Logo">
+                </div>
+                <h3 class="accordion-title">Loss Prevention Security Services</h3>
+              </div>
+              <div class="accordion-body">
+                <p>Protect retail inventory with plain-clothes and uniformed officers. Specialized techniques to minimize shrinkage and ensure customer safety.</p>
+                <a href="loss-prevention.html" class="accordion-link">Learn More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <!-- Item 5: Elite Suit & Tie -->
+            <div class="accordion-item" data-service="5">
+              <div class="accordion-header">
+                <div class="accordion-icon-box">
+                  <img src="assets/elite suit and tie shield.png" alt="Elite Security Logo">
+                </div>
+                <h3 class="accordion-title">Elite Suit & Tie Security</h3>
+              </div>
+              <div class="accordion-body">
+                <p>Discreet protection blending seamlessly into luxury environments. High-end security for premium boutiques and executive offices.</p>
+                <a href="elite-suit-tie.html" class="accordion-link">Learn More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <!-- Item 6: Concierge Security -->
+            <div class="accordion-item" data-service="6">
+              <div class="accordion-header">
+                <div class="accordion-icon-box">
+                  <img src="assets/concierge shield.png" alt="Concierge Logo">
+                </div>
+                <h3 class="accordion-title">Concierge Security Services</h3>
+              </div>
+              <div class="accordion-body">
+                <p>First-class hospitality combined with strict building access control. The perfect face for your luxury residential or commercial lobby.</p>
+                <a href="concierge-security.html" class="accordion-link">Learn More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <!-- Item 7: Executive Protection -->
+            <div class="accordion-item" data-service="7">
+              <div class="accordion-header">
+                <div class="accordion-icon-box">
+                  <img src="assets/executive shield.png" alt="Executive Logo">
+                </div>
+                <h3 class="accordion-title">Executive Protection Security</h3>
+              </div>
+              <div class="accordion-body">
+                <p>Close protection services for VIPs and high-net-worth individuals. Discreet and professional bodyguards for domestic and international travel.</p>
+                <a href="executive-protection.html" class="accordion-link">Learn More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <!-- Item 8: House Protection -->
+            <div class="accordion-item" data-service="8">
+              <div class="accordion-header">
+                <div class="accordion-icon-box">
+                  <img src="assets/house shield.png" alt="House Protection Logo">
+                </div>
+                <h3 class="accordion-title">House Protection Security Services</h3>
+              </div>
+              <div class="accordion-body">
+                <p>Protecting private estates with dedicated residential guard patrols. 24/7 peace of mind for you and your family.</p>
+                <a href="house-protection.html" class="accordion-link">Learn More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
           </div>
-          <div class="service-content">
-            <h3>Uniform Security</h3>
-            <p>Visible, professional deterrence for commercial and residential properties.</p>
-            <a href="uniform-security.html" class="learn-more">Learn More <span class="arrow">&gt;</span></a>
-          </div>
-        </div>
-        
-        <!-- Service 2 -->
-        <div class="service-card shadow-sm border-radius">
-          <div class="service-icon-box">
-             <img src="assets/office shield.png" alt="Office Security Shield" />
-          </div>
-          <div class="service-content">
-            <h3>Office Security Services</h3>
-            <p>Protect your corporate assets, manage visitors, and ensure safety.</p>
-            <a href="office-security.html" class="learn-more">Learn More <span class="arrow">&gt;</span></a>
-          </div>
-        </div>
-        
-        <!-- Service 3 -->
-        <div class="service-card shadow-sm border-radius">
-          <div class="service-icon-box">
-             <img src="assets/event shield.png" alt="Event Security Shield" />
-          </div>
-          <div class="service-content">
-            <h3>Event Security Services</h3>
-            <p>Comprehensive crowd management and protection for large gatherings.</p>
-            <a href="event-security.html" class="learn-more">Learn More <span class="arrow">&gt;</span></a>
-          </div>
-        </div>
-        
-        <!-- Service 4 -->
-        <div class="service-card shadow-sm border-radius">
-          <div class="service-icon-box">
-             <img src="assets/loss prevention shield.png" alt="Loss Prevention Shield" />
-          </div>
-          <div class="service-content">
-            <h3>Loss Prevention Services</h3>
-            <p>Protect retail inventory with plain-clothes and uniformed officers.</p>
-            <a href="loss-prevention.html" class="learn-more">Learn More <span class="arrow">&gt;</span></a>
-          </div>
-        </div>
-        
-        <!-- Service 5 -->
-        <div class="service-card shadow-sm border-radius">
-          <div class="service-icon-box">
-             <img src="assets/elite suit and tie shield.png" alt="Elite Suit & Tie Shield" />
-          </div>
-          <div class="service-content">
-            <h3>Elite Suit & Tie Security</h3>
-            <p>Discreet protection blending seamlessly into luxury environments.</p>
-            <a href="elite-suit-tie.html" class="learn-more">Learn More <span class="arrow">&gt;</span></a>
-          </div>
-        </div>
-        
-        <!-- Service 6 -->
-        <div class="service-card shadow-sm border-radius">
-          <div class="service-icon-box">
-             <img src="assets/concierge shield.png" alt="Concierge Shield" />
-          </div>
-          <div class="service-content">
-            <h3>Concierge Security Services</h3>
-            <p>First-class hospitality combined with strict building access control.</p>
-            <a href="concierge-security.html" class="learn-more">Learn More <span class="arrow">&gt;</span></a>
-          </div>
-        </div>
-        
-        <!-- Service 7 -->
-        <div class="service-card shadow-sm border-radius">
-          <div class="service-icon-box">
-             <img src="assets/executive shield.png" alt="Executive Shield" />
-          </div>
-          <div class="service-content">
-            <h3>Executive Protection</h3>
-            <p>Close protection services for VIPs and high-net-worth individuals.</p>
-            <a href="executive-protection.html" class="learn-more">Learn More <span class="arrow">&gt;</span></a>
-          </div>
-        </div>
-        
-        <!-- Service 8 -->
-        <div class="service-card shadow-sm border-radius">
-          <div class="service-icon-box">
-             <img src="assets/house shield.png" alt="House Protection Shield" />
-          </div>
-          <div class="service-content">
-            <h3>House Protection Services</h3>
-            <p>Protecting private estates with dedicated residential guard patrols.</p>
-            <a href="house-protection.html" class="learn-more">Learn More <span class="arrow">&gt;</span></a>
+
+          <!-- Right: Sticky Visual Area -->
+          <div class="sticky-visual-area">
+            <div class="visual-image-box active" data-image="1" style="background-image: url('assets/uniform.jpg');">
+              <div class="visual-glass-overlay">
+                <h4 class="text-white">Active Vigilance</h4>
+                <p class="text-light">Ensuring your perimeter remains secure 24/7.</p>
+              </div>
+            </div>
+            <div class="visual-image-box" data-image="2" style="background-image: url('assets/office.jpg');">
+              <div class="visual-glass-overlay">
+                <h4 class="text-white">Corporate Safety</h4>
+                <p class="text-light">Professional protection for your business assets.</p>
+              </div>
+            </div>
+            <div class="visual-image-box" data-image="3" style="background-image: url('assets/event.jpg');">
+              <div class="visual-glass-overlay">
+                <h4 class="text-white">Seamless Events</h4>
+                <p class="text-light">Managing crowds with precision and care.</p>
+              </div>
+            </div>
+            <div class="visual-image-box" data-image="4" style="background-image: url('assets/loss.jpg');">
+              <div class="visual-glass-overlay">
+                <h4 class="text-white">Retail Integrity</h4>
+                <p class="text-light">Protecting your inventory and your bottom line.</p>
+              </div>
+            </div>
+            <div class="visual-image-box" data-image="5" style="background-image: url('assets/vip.jpg');">
+              <div class="visual-glass-overlay">
+                <h4 class="text-white">Discreet Protection</h4>
+                <p class="text-light">Elite security for high-end luxury settings.</p>
+              </div>
+            </div>
+            <div class="visual-image-box" data-image="6" style="background-image: url('assets/concierge.jpg');">
+              <div class="visual-glass-overlay">
+                <h4 class="text-white">Hospitality First</h4>
+                <p class="text-light">Where security meets exceptional service.</p>
+              </div>
+            </div>
+            <div class="visual-image-box" data-image="7" style="background-image: url('assets/executive.jpg');">
+              <div class="visual-glass-overlay">
+                <h4 class="text-white">VIP Protection</h4>
+                <p class="text-light">High-level safety for high-profile clients.</p>
+              </div>
+            </div>
+            <div class="visual-image-box" data-image="8" style="background-image: url('assets/house.jpg');">
+              <div class="visual-glass-overlay">
+                <h4 class="text-white">Home Sanctuary</h4>
+                <p class="text-light">Defending your private residence with honor.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
+
+
 
   <!-- ===== ABOUT US SECTION (Split Layout) ===== -->
   <section class="about-section" id="about">
     <div class="about-grid">
       <!-- Left: Image Placeholder -->
-      <div class="about-image-side">
-        <!-- REPLACE WITH ACTUAL PHOTOGRAPH -->
-        <div class="image-placeholder-overlay text-center">
-          <span>Officer Image<br/>Will Go Here</span>
-        </div>
+      <div class="about-image-side" style="background: url('assets/1.jpg') no-repeat center center; background-size: cover; min-height: 400px;">
+        <!-- Photo replaced -->
       </div>
       
       <!-- Right: Content -->
@@ -233,7 +307,7 @@
         <!-- Trust 1 -->
         <div class="trust-card">
           <div class="trust-icon-container">
-             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
              <div class="check-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
           </div>
           <h3>Highly Trained<br/>Guards</h3>
@@ -241,7 +315,7 @@
         </div>
         
         <!-- Trust 2 -->
-        <div class="trust-card active-trust-card">
+        <div class="trust-card">
           <div class="trust-icon-container">
              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
              <div class="check-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
@@ -359,7 +433,7 @@
         <article class="blog-card fade-up">
           <div class="blog-image">
             <div class="blog-category">Campus Security</div>
-            <img src="assets/blog-campus.png" alt="Campus Security">
+            <img src="assets/1.jpg" alt="Campus Security">
           </div>
           <div class="blog-content">
             <h3>The Top 3 Misconceptions About Campus Security</h3>
@@ -376,7 +450,7 @@
         <article class="blog-card fade-up">
           <div class="blog-image">
             <div class="blog-category">Tech & Surveillance</div>
-            <img src="assets/blog-cctv.png" alt="CCTV Security">
+            <img src="assets/loss2.jpg" alt="CCTV Security">
           </div>
           <div class="blog-content">
             <h3>What Does a Commercial CCTV Security System Actually Include?</h3>
@@ -393,7 +467,7 @@
         <article class="blog-card fade-up">
           <div class="blog-image">
             <div class="blog-category">Event Security</div>
-            <img src="assets/event.png" alt="Event Security">
+            <img src="assets/event.jpg" alt="Event Security">
           </div>
           <div class="blog-content">
             <h3>Event Security: The Hidden Risks Behind Large Gatherings</h3>
@@ -410,7 +484,7 @@
         <article class="blog-card fade-up">
           <div class="blog-image">
             <div class="blog-category">Professional Ethics</div>
-            <img src="assets/d53885ec-81b3-4895-9cc1-b907146979ec.png" alt="Security Guards">
+            <img src="assets/uniform.jpg" alt="Security Guards">
           </div>
           <div class="blog-content">
             <h3>When Security Guards Are Present But Not Delivering Results</h3>
@@ -426,6 +500,7 @@
     </div>
   </section>
 
+
   <!-- ===== FOOTER ===== -->
   
   
@@ -437,9 +512,9 @@
           <img src="assets/logo.jpg" alt="Guardem Logo">
           <p>Founded on integrity and vigilance, Guardem Security provides world-class protection for people and properties across the region.</p>
           <div class="social-icons">
-            <a href="mailto:info@guardem.com" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="mailto:careers@guardem.ca" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
             <a href="https://wa.me/17782972000" class="social-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-            <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/guardem_security?igsh=a3ZzcDl4ZDZiaGhh&utm_source=qr" target="_blank" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
         
@@ -449,11 +524,11 @@
             <li><a href="uniform-security.html">Uniform Security</a></li>
             <li><a href="office-security.html">Office Security</a></li>
             <li><a href="event-security.html">Event Security</a></li>
-            <li><a href="loss-prevention.html">Loss Prevention</a></li>
-            <li><a href="elite-suit-tie.html">Elite Suit & Tie</a></li>
+            <li><a href="loss-prevention.html">Loss Prevention Security</a></li>
+            <li><a href="elite-suit-tie.html">Elite Suit & Tie Security</a></li>
             <li><a href="concierge-security.html">Concierge Security</a></li>
-            <li><a href="executive-protection.html">Executive Protection</a></li>
-            <li><a href="house-protection.html">House Protection</a></li>
+            <li><a href="executive-protection.html">Executive Protection Security</a></li>
+            <li><a href="house-protection.html">House Protection Security</a></li>
           </ul>
         </div>
 
@@ -461,23 +536,23 @@
           <h4>EXPLORE</h4>
           <ul>
             <li><a href="about.html">Our Story</a></li>
-            <li><a href="https://ca.indeed.com/cmp/Guardem-Security-Group-Inc">Careers</a></li>
-            <li><a href="services.html">All Services</a></li>
+            <li><a href="https://www.indeed.com/cmp/Guardem-Security-Ltd." target="_blank">Careers</a></li>
+            <li><a href="index.html#services">All Services</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="faq.html">FAQ</a></li>
-            <li><a href="index.html#contact">Contact Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
 
         <div class="footer-col footer-contact-info">
-          <h4>CONTACT</h4>
+          <h4>CONTACT US</h4>
           <p><i class="fas fa-map-marker-alt"></i> 203-12885 80th Avenue,<br>Surrey, BC, V3W 0E6</p>
           <p><i class="fas fa-phone"></i> (+1) 778-297-2000</p>
-          <p><i class="fas fa-envelope"></i> info@guardem.com</p>
+          <p><i class="fas fa-envelope"></i> careers@guardem.ca</p>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2025 GUARDEM SECURITY GROUP INC. ALL RIGHTS RESERVED.</p>
+        <p>© 2026 GUARDEM SECURITY GROUP INC. ALL RIGHTS RESERVED.</p>
       </div>
     </div>
   </footer>
@@ -485,6 +560,6 @@
 
 
 
-  <script src="main.js"></script>
+  <script src="main.js?v=2"></script>
 </body>
 </html>
