@@ -217,24 +217,22 @@
     </div>
   </section>
 
-  <!-- SECTION 5: OUR PROCESS HEADING -->
-  <section class="service-process-section" style="background:#0d1b2a; padding-bottom: 0;">
-    <div class="container mb-5">
-      <h2 class="section-title text-white text-center mb-5 reveal-on-scroll">Our Deployment <span style="color: var(--gold);">Process</span></h2>
+  <!-- SECTION 5: OUR PROCESS (Perfect Framed Zigzag) -->
+  <section class="service-process-section tracing-container" style="background:#0d1b2a;">
+    <div class="container text-center" style="position: relative; z-index: 3;">
+      <h2 class="section-title text-white mb-0 reveal-on-scroll">Our Deployment <span style="color: var(--gold);">Process</span></h2>
     </div>
-  </section>
 
-  <!-- SECTION 5: OUR PROCESS (Zero Baseline Precision) -->
-  <section class="service-process-section tracing-container" style="background:#0d1b2a; padding-top: 0; padding-bottom: 100px;">
-    <div class="container" style="position: relative;">
+    <!-- Container gap to house SVG line start -->
+    <div class="container" style="position: relative; margin-top: 150px; padding-bottom: 50px;">
       
-      <!-- SVG Zero-Baseline Offset with Locked Height -->
-      <div class="tracing-svg-wrapper" style="position: absolute; top: 0; left: 0; width: 100%; height: 1600px; z-index: 1;">
-        <svg viewBox="0 0 1000 1600" preserveAspectRatio="none" style="width: 100%; height: 100%;">
+      <!-- SVG exactly wrapping from underneath title through 4 steps -->
+      <div class="tracing-svg-wrapper" style="position: absolute; top: -150px; left: 0; width: 100%; height: 1750px; z-index: 1;">
+        <svg viewBox="0 0 1000 1750" preserveAspectRatio="none" style="width: 100%; height: 100%;">
           <!-- Background path (faint) -->
-          <path class="tracing-path-bg" d="M50,0 L950,0 L950,400 L50,400 L50,800 L950,800 L950,1200 L50,1200 L50,1600" />
+          <path class="tracing-path-bg" d="M500,0 L500,50 L50,50 L50,550 L950,550 L950,950 L50,950 L50,1350 L950,1350 L950,1750 L500,1750" />
           <!-- Active path (drawn on scroll) -->
-          <path class="tracing-path-active" d="M50,0 L950,0 L950,400 L50,400 L50,800 L950,800 L950,1200 L50,1200 L50,1600" />
+          <path class="tracing-path-active" d="M500,0 L500,50 L50,50 L50,550 L950,550 L950,950 L50,950 L50,1350 L950,1350 L950,1750 L500,1750" />
         </svg>
       </div>
 
