@@ -1802,8 +1802,8 @@ ul { list-style: none; }
 .zigzag-step {
   display: flex;
   align-items: center;
-  justify-content: center; /* Move content to the 'middle' between the vertical lines */
-  gap: 120px; /* Generous gap for premium feel */
+  justify-content: center; /* Center the whole content block */
+  gap: 80px; /* Precise gap for centering */
   text-align: left;
   height: 400px; /* Precise segment height */
   position: relative;
@@ -1811,11 +1811,11 @@ ul { list-style: none; }
 
 .zigzag-step:nth-child(even) {
   flex-direction: row-reverse;
-  text-align: right;
+  text-align: left; /* Keep text left-aligned even when reversed for cleaner look in center */
 }
 
 .zigzag-visual-premium {
-  flex: 0 0 500px; /* Fixed width to allow centering */
+  flex: 0 0 400px; /* Narrower for centering */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1824,7 +1824,7 @@ ul { list-style: none; }
 }
 
 .floating-illustration {
-  max-width: 350px; /* Slightly larger for premium feel */
+  max-width: 300px; /* Sized to fit perfectly in the centered cluster */
   height: auto;
   filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
   z-index: 2;
@@ -1850,7 +1850,7 @@ ul { list-style: none; }
 
 .step-info {
   position: relative;
-  flex: 0 0 500px; /* Fixed width to allow centering */
+  flex: 0 0 450px; /* Narrower for centering */
 }
 
 .step-info h3, .step-info h4 {
