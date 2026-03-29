@@ -1751,30 +1751,22 @@ ul { list-style: none; }
 }
 
 .industry-card-premium {
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.05); /* Solid background, no blur */
+  border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 40px 20px;
   border-radius: 20px;
   text-align: center;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+/* Hover Scaling Removed */
 .industry-card-premium:hover {
-  transform: translateY(-15px) scale(1.05);
   background: rgba(255, 255, 255, 0.08);
   border-color: var(--gold);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
 }
 
 .industry-card-premium svg {
   stroke: var(--gold);
   margin-bottom: 20px;
-  transition: transform 0.4s ease;
-}
-
-.industry-card-premium:hover svg {
-  transform: scale(1.2);
 }
 
 .industry-card-premium h4 {
@@ -1820,17 +1812,13 @@ ul { list-style: none; }
 }
 
 .floating-illustration {
-  max-width: 280px;
+  max-width: 250px;
   height: auto;
-  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.5));
-  animation: floatIllustration 4s ease-in-out infinite;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
   z-index: 2;
 }
 
-@keyframes floatIllustration {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  50% { transform: translateY(-15px) rotate(2deg); }
-}
+/* Animation Removed */
 
 .step-icon-box {
   width: 90px;
@@ -1860,8 +1848,8 @@ ul { list-style: none; }
   background: var(--gold);
   color: var(--navy);
   border-color: var(--gold);
-  transform: translate(-50%, -50%) scale(1.1) rotate(10deg);
-  box-shadow: 0 20px 40px rgba(201, 168, 76, 0.4);
+  transform: translate(-50%, -50%); /* Hover scale/rotate removed */
+  box-shadow: 0 0 30px rgba(201, 168, 76, 0.4);
 }
 
 .step-info h3 {
