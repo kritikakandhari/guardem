@@ -1815,7 +1815,7 @@ ul { list-style: none; }
 }
 
 .zigzag-visual-premium {
-  flex: 1;
+  flex: 0 0 500px; /* Fixed width to allow centering */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1824,7 +1824,7 @@ ul { list-style: none; }
 }
 
 .floating-illustration {
-  max-width: 250px;
+  max-width: 350px; /* Slightly larger for premium feel */
   height: auto;
   filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
   z-index: 2;
@@ -1850,7 +1850,7 @@ ul { list-style: none; }
 
 .step-info {
   position: relative;
-  flex: 1;
+  flex: 0 0 500px; /* Fixed width to allow centering */
 }
 
 .step-info h3, .step-info h4 {
